@@ -56,14 +56,44 @@ O jogo conta com uma série de classes diferentes, cada qual com caracter espec�
 * Defesa: aumenta a defesa em 20% pelos seus próximos 2 turnos
 * Cura: recupera 25% da vida dos aliados ao seu redor (não recupera a própria vida), em um raio de 2 blocos - MAS CUIDADO, para cada uso consecutivo da habilidade, o valor da cura será reduzido em 3%, até chegar ao mínimo de 10% (cada turno sem utilizar retorna 3% do valor); recupera 40% da própria vida, sem afetar aliados
 
+## Área dos ataques
+
+```mermaid
+  graph TD;
+  Guerreiro;
+```
+![](imagens/defensor-guerreiro.svg)
+
+```mermaid
+  graph TD;
+  Defensor;
+```
+![](imagens/defensor-guerreiro.svg)
+
+```mermaid
+  graph TD;
+  Arqueiro;
+```
+![](imagens/arqueiro-primario.svg)
+![](imagens/arqueiro-secundario.svg)
+
+```mermaid
+  graph TD;
+  Mago;
+```
+![](imagens/mago.svg)
+
+```mermaid
+  graph TD;
+  Suporte;
+```
+![](imagens/suporte-primario.svg)
+![](imagens/suporte-secundario.svg)
+
 ## Mapa
 Um espaço 2d será gerado e alguns obstáculos serão posicionados. Obstáculos representam que aquela posição está ocupada e personagens não podem transitar por ela, a menos que possuam alguma característica que ignore essa restrição.\
 Tanto a construção como a movimentação são baseadas em blocos visuais, que representam 1 espaço lógico cada.
 
-## Mecânica
-A cada ação executada pelo personagem, um evento será disparado. Quando executado com êxito, aquela ação receberá um bônus de 10% em cima do valor original e potencializará o resultado.\
-Eventos são mini jogos de resposta rápida limitados por tempo, selecionados aleatoriamente a cada turno. De acordo com a classe do personagem em uso, alguns eventos possuem um grau de ativação mais elevado e ocorrem com maior frequência que outros.
-<br><br><br><br>
 
 ### Finalidade do projeto
 Este projeto tem como objetivo aplicar os conhecimentos acerca da linguagem Java adquiridos na cadeira Programação Orientada a Objetos e possui critérios avaliativos para a disciplina.
